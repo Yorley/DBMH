@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Codigo de idioma: español latino -->
+<html lang="es-419">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Registro de Usuario</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+    body { 
+      background: #97D9BE;
+      background-image: url("images/background1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding-top: 20px;
+  	  padding-bottom: 20px;
+    }
+    .nav-tabs { background-color:#161616; }
+    .nav-tabs > li > a { 
+      border: medium none; 
+      color: white !important;
+    }
+    .nav-tabs > li > a:hover {
+      background-color: #303136 !important;
+      border: medium none;
+      border-radius: 0;
+      color:#fff;
+    }
+    .nav-tabs > .active > a { background-color: #DC143C !important; }
+    .jumbotron { background-color: #EFF5AE; }
+  </style>
+
+  <body>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Antes de la linea blanca -->
+      <br/>
+      <h1><font face="fantasy" color="black">Registro de Usuario</font> </h1>
+
+      <!-- Creacion del menu -->
+      <nav class= "navbar navbar-default " role="navigation">
+        <!-- Contrae el menu al reducir el tamaño de la pagina -->
+	    <div class= "container-fluid">
+	    <div class="navbar-header">
+	      <!-- Boton del menu contraido -->
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegación-MatchMe">
+		    <span class="sr-only">Display/ hide MENU</span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		  <a href="index.html" class="navbar-brand">Home</a>
+	    </div>
+	    <!-- Opciones del Menu-->
+	    <div class="collapse navbar-collapse" id="navegación-MatchMe">
+	    <ul class="nav navbar-nav">
+          <li><a href="datos_basicos.html">Datos básicos</a></li>
+          <li><a href="aspecto_fisico.html">Aspecto físico</a></li>
+          <li><a href="background.html">Background</a></li>
+          <li><a href="estilo_vida.html">Estilo de vida</a></li>
+          <li class="active"><a href="ejercicios.html">Ejercicios</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+	    </ul>
+	    </div>
+	    </div>
+	  </nav>
+
+      <!-- Dentro del cuadro rosado -->
+      <div class="row jumbotron">
+
+      <label for="">Selecciona tus intereses en ejercicios y actividades al aire libre:</label>
+
+        <!-- Inicio del Formulario -->
+        <form role="form" method="post" action="index.html">
+
+        <!-- Columna Izquierda -->
+        <div class="col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Aerobics</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Motocross</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Baseball</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Basketball</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Pool</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Bowling</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Cycling</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Football</label>
+            </div>
+        </div>
+
+        <!-- Columna Central -->
+        <div class="col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Golf</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Dancing</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Skating</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Martial arts</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Running</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Skiing</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Soccer</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Swimming</label>
+            </div>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="col-sm-4">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Tennis</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Hiking</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Weights</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Yoga</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Hockey</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Volleyball</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Other</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Any</label>
+            </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-6">
+            <label for="">¡Presiona para guardar tu información!</label>
+            <!-- Boton -->
+            <button type="submit" class="btn btn-info btn-block">Guardar</button>
+        </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+
+</html>
+
+<!-- 
+  Template tomado de
+  http://bootsnipp.com/snippets/featured/float-label-pattern-forms 
+-->

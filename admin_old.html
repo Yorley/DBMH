@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<html lang="es">
+<head>
+	<meta charset= "UTF-8">
+	<title>Opciones administrativas</title>
+	<meta name="viewport" content="with=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  	<!-- Optional theme -->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+ 	<link rel="stylesheet"  href="Styles/Admin.css">
+</head>
+<body class="bodiii">
+	<div class="container"> <!--Este container permite que el menu se adapte a la pagina y todo lo que se cree 									se adapta a la pagina-->
+		<h1><font face="fantasy" color="black">MatchingHearts</font> </h1> <!--Titulo sobre el menu-->
+		<nav class= "navbar navbar-default " role="navigation"> <!--es la creacion del menu el default le da 																color blanco -->
+			<div class= "container-fluid"> <!--Este container permite que lo que se cree dentro de la tabla no 											se salga de ella-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegación-MatchMe"> <!--Todo lo que viene en esta seccion permite que si la pantalla se 												reduce el menu se contrae y se ve bonito-->
+						<span class="sr-only">Display/ hide MENU</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a href="C:\Users\YorleydeMaría\Documents\bootstrap-3.3.5-dist\Match Me\Home.html" class="navbar-brand"><img align="center" style= "padding-top: 0px;	padding-bottom: 20px;"src="images/logotransparente.png" height="50"; width="50"></a>
+				</div>
+				<!-- OPCIONES DEL MENU-->
+				<div class="collapse navbar-collapse" id="navegación-MatchMe">
+					<ul class="nav navbar-nav">
+						<li><a href="profile.html">Perfil</a></li>
+						<li><a href="#">Deseos</a></li>
+						<li><a href="Mis-Matches.html">Mis Matches</a></li>
+						<li><a href="consultas.html">Consultas</a></li>
+					</ul>
+					<form action="" class="navbar-form navbar-right" role="search">
+						<div class="form group">
+							</button> <!--esto configura el boton de la barra donde se depliega que salga o que configure-->
+							<button type="submit" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-hashpopup="true" aria-expanded="false" >
+								<span> Nickname</span>
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li ><a href="index.html" class="glyphicon glyphicon-cog">  Configuración</a></li>
+								<li><a href="iniciarsesion.html">Cerrar sesión</a></li>
+								<li><a href="admin.html">Administrador</a></li>
+								
+							</ul>
+
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			
+		</nav>
+		
+		<!---aca va el jumbotron-->
+		<!---El jumbotron sirve para poner un recuadro es como un container que se le puede poner color e incluso imagenes y al igual que en la pagina en si todo se trabaja por columnas y filas pues la pantalla es como una matriz.... el maximo numero de columnas es 12.. asi que ahi una va partiendo la pagina a su gusto... ej: si quiere solo dos elemntos haces col 6 y col 6 asi se pone en dos la panatalla-->
+
+		<div class="jumbotron">
+			<h3>Seleccione los datos deseados para crear un evento nuevo: </h3>
+			<br>
+			<section class="columns">
+				<div class="column1">
+					<b>País:</b>
+					<select name="pais">
+						<option value="pais1">País #1</option>
+						<option value="pais2">País #2</option>
+					</select>
+				</div>
+					
+				<div id="column2" style="float:left; margin:0; width:25%;">
+					<b>Ciudad:</b>
+					<select name="ciudad">
+						<option value="ciudad1">Ciudad #1</option>
+						<option value="ciudad2">Ciudad #2</option>
+					</select>
+				</div>
+					
+				<div id="column3" style="float:left; margin:0; width:25%;">
+					<b>Hora:</b>
+					<select name="hora">
+						<option value="hora1">Hora #1</option>
+						<option value="hora2">Hora #2</option>
+					</select>
+				</div>
+					
+				<div class="column4 center-block" style="float:left; margin:0; width:25%;">
+					<button id="singlebutton" name="singlebutton" class="btn btn-success center-block">
+						Crear evento
+					</button>
+				</div>
+				<br>
+				
+			</section>
+		</div>
+		
+		
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>

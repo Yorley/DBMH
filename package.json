@@ -1,0 +1,10 @@
+{
+    "version" : "0.0.1",
+    "name": "Proyecto",
+    "description": "a package manager for JavaScript",
+    "dependencies": {
+        "express" : "4.9",
+        "body-parser" : "1.9"
+
+    }
+}

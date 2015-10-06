@@ -1,0 +1,68 @@
+.ee {
+  
+  font-size: 300%;
+  color: #d38451;
+  
+}
+.bodiii{
+	background:#DC143C ;
+	background-image: url("background1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 20px;
+  	padding-bottom: 20px;
+}
+
+h1{
+	font-size: 500%;
+	font-family:fantasy;
+	color: #000000;
+
+}	
+p{
+	font-family: "comic sans";
+	font-weight: bold;
+	font-size: 172%;
+}
+.nickname{
+	font-size: 300%;
+	font-family:fantasy;
+	color: #000000;
+	margin-left: 45px;
+
+}
+.subtitle{
+	font-size: 180%;
+	font-family:sans-serif;
+	font-weight: bold;
+	color: #FF0066;
+
+}	
+.jumbotron{
+	background-color: #EFF5AE;
+	
+
+
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

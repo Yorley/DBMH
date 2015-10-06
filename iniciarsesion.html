@@ -1,0 +1,60 @@
+<!-- Código de ejemplo usado como base: http://getbootstrap.com/examples/signin/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Inicio de sesión.</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos para este template -->
+    <link href="Styles/iniciarsesion.css" rel="stylesheet">
+
+    <!-- Soporte para Internet Explorer 8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="bodiii">
+
+    <div class="container">
+
+	  <div class="jumbotron">
+		  <form class="form-signin">
+			<center><img src="logo.png" alt="logo" height="182" width="300"></center>
+			<h5 class="form-signin-slogan"><i>Bienvenido.</i></h5>
+			<p>Digite sus datos para iniciar sesión.</p>
+			<label for="inputEmail" class="sr-only">Nombre de usuario</label>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" autofocus>
+			<label for="inputPassword" class="sr-only">Contraseña</label>
+			<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña">
+			<div class="checkbox">
+			  <label>
+				<input type="checkbox" value="remember-me"> Recordar mis datos.
+			  </label>
+			</div>
+			<a href="profile.html" class="btn btn-lg btn-success btn-block" type="button">Iniciar sesión</a>
+			<p></p>
+			<center>
+				<h5 class="form-signin-invite"><i>¿Aún no tiene una cuenta?</i></h5>
+			</center>
+			<a href="datos_basicos.html" class="btn btn-lg btn-primary btn-block" role="button">Registrarse</a>
+			<br>
+			<br>
+
+		  </form>
+	  </div>
+
+    </div> <!-- /container -->
+  </body>
+</html>

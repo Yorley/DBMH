@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Codigo de idioma: español latino -->
+<html lang="es-419">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Registro de Usuario</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+    body { 
+      background: #97D9BE;
+      background-image: url("images/background1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding-top: 20px;
+  	  padding-bottom: 20px;
+    }
+    .nav-tabs { background-color:#161616; }
+    .nav-tabs > li > a { 
+      border: medium none; 
+      color: white !important;
+    }
+    .nav-tabs > li > a:hover {
+      background-color: #303136 !important;
+      border: medium none;
+      border-radius: 0;
+      color:#fff;
+    }
+    .nav-tabs > .active > a { background-color: #DC143C !important; }
+    .jumbotron { background-color: #EFF5AE; }
+  </style>
+
+  <body>
+  <div class="container">
+    <div class="row">
+
+      <!-- Antes de la linea blanca -->
+      <br/>
+      <h1><font face="fantasy" color="black">Registro de Usuario</font> </h1>
+
+      <!-- Creacion del menu -->
+      <nav class= "navbar navbar-default " role="navigation">
+        <!-- Contrae el menu al reducir el tamaño de la pagina -->
+	    <div class= "container-fluid">
+	    <div class="navbar-header">
+	      <!-- Boton del menu contraido -->
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegación-MatchMe">
+		    <span class="sr-only">Display/ hide MENU</span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		  <a href="index.html" class="navbar-brand">Home</a>
+	    </div>
+	    <!-- Opciones del Menu-->
+	    <div class="collapse navbar-collapse" id="navegación-MatchMe">
+	    <ul class="nav navbar-nav">
+          <li><a href="datos_basicos.html">Datos básicos</a></li>
+          <li><a href="aspecto_fisico.html">Aspecto físico</a></li>
+          <li class="active"><a href="background.html">Background</a></li>
+          <li><a href="estilo_vida.html">Estilo de vida</a></li>
+          <li><a href="ejercicios.html">Ejercicios</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+	    </ul>
+	    </div>
+	    </div>
+	  </nav>
+
+      <!-- Dentro del cuadro rosado -->
+      <div class="row jumbotron">
+
+        <!-- Inicio del Formulario -->
+        <form role="form" method="post" action="index.html">
+
+        <!-- Columna Izquierda -->
+        <div class="col-sm-5">
+            <div class="form-group float-label-control">
+              <label for="">Nivel de educación</label>
+              <select class="form-control">
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </div>
+            <div class="form-group float-label-control">
+				<label for="">Idiomas</label>
+				<br>
+				<div class="col-xs-6">
+					<input type="checkbox" name="x" value="1">Opción 1<br>
+					<input type="checkbox" name="x" value="1">Opción 2<br>
+					<input type="checkbox" name="x" value="1">Opción 3<br>
+					<input type="checkbox" name="x" value="1">Opción 4<br>
+					<input type="checkbox" name="x" value="1">Opción 5<br>
+					<input type="checkbox" name="x" value="1">Opción 6<br>
+				</div>
+				<div class="col-xs-6">
+					<input type="checkbox" name="x" value="1">Opción 7<br>
+					<input type="checkbox" name="x" value="1">Opción 8<br>
+					<input type="checkbox" name="x" value="1">Opción 9<br>
+					<input type="checkbox" name="x" value="1">Opción 10<br>
+					<input type="checkbox" name="x" value="1">Opción 11<br>
+					<input type="checkbox" name="x" value="1">Opción 12<br>
+			</div>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-sm-5 col-md-offset-1">
+            <div class="form-group float-label-control">
+              <label for="">Estado civil</label>
+              <select class="form-control">
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </div>
+            <div class="form-group float-label-control">
+              <label for="">Religión</label>
+              <select class="form-control">
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </div>
+            <label for="">¡Presiona para guardar tu información! </label>
+            <!-- Boton -->
+            <button type="submit" class="btn btn-info btn-block">Guardar</button>
+        </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  </body>
+
+</html>
+
+<!-- 
+  Template tomado de
+  http://bootsnipp.com/snippets/featured/float-label-pattern-forms 
+-->

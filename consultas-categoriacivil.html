@@ -1,0 +1,140 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<html lang="es">
+<head>
+	<meta charset= "UTF-8">
+	<title>matchMe</title>
+	<meta name="viewport" content="with=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  	<!-- Optional theme -->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+ 	<link rel="stylesheet"  href="Styles/styles.css">
+	
+</head>
+<body class="bodiii">
+	<div class="container"> <!--Este container permite que el menu se adapte a la pagina y todo lo que se cree 									se adapta a la pagina-->
+		<h1><font face="fantasy" color="black">MatchingHearts</font> </h1> <!--Titulo sobre el menu-->
+		<nav class= "navbar navbar-default " role="navigation"> <!--es la creacion del menu el default le da 																color blanco -->
+			<div class= "container-fluid"> <!--Este container permite que lo que se cree dentro de la tabla no 											se salga de ella-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegación-MatchMe"> <!--Todo lo que viene en esta seccion permite que si la pantalla se 												reduce el menu se contrae y se ve bonito-->
+						<span class="sr-only">Display/ hide MENU</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a href="#" class="navbar-brand">HOME</a>
+				</div>
+				<!-- OPCIONES DEL MENU-->
+				<div class="collapse navbar-collapse" id="navegación-MatchMe">
+					<ul class="nav navbar-nav">
+						<li><a href="profile.html">Perfil</a></li>
+						<li><a href="#">Deseos</a></li>
+						<li><a href="Mis-Matches.html">Mis Matches</a></li>
+						<li class = "active"><a href="consultas.html">Consultas</a></li>
+						<li><a href="admin.html">Administrador</a></li>
+					</ul>
+					<form action="" class="navbar-form navbar-right" role="search">
+						<div class="form group">
+							</button> <!--esto configura el boton de la barra donde se depliega que salga o que configure-->
+							<button type="submit" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-hashpopup="true" aria-expanded="false" >
+								<span> Nickname</span>
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li ><a href="index.html" class="glyphicon glyphicon-cog">  Configuración</a></li>
+								<li><a href="iniciarsesion.html">Cerrar sesión</a></li>
+								
+							</ul>
+
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			
+		</nav>
+		
+		<!---aca va el jumbotron-->
+		<!---El jumbotron sirve para poner un recuadro es como un container que se le puede poner color e incluso imagenes y al igual que en la pagina en si todo se trabaja por columnas y filas pues la pantalla es como una matriz.... el maximo numero de columnas es 12.. asi que ahi una va partiendo la pagina a su gusto... ej: si quiere solo dos elemntos haces col 6 y col 6 asi se pone en dos la panatalla-->
+
+		<div class="jumbotron container-fluid bg-color">
+			<h4><b>Seleccione la consulta deseada:</b></h4>
+			<div class="row">
+			  <div class="col-sm-2">
+				<div class="sidebar-nav">
+				  <div class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <span class="visible-xs navbar-brand">Sidebar menu</span>
+					</div>
+					<div class="navbar-collapse collapse sidebar-navbar-collapse">
+					  <ul class="nav navbar-nav">
+						<li><a href="consultas.html">Búsqueda avanzada</a></li>
+						<li><a href="consultas-total.html">Cantidad total de usuarios</a></li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cantidad de usuarios por categoría<b class="caret"></b></a>
+							  <ul class="dropdown-menu">
+								<li><a href="consultas-categoriaedad.html">Rango de edad</a></li>
+								<li><a href="consultas-categoriapais.html">País</a></li>
+								<li><a href="consultas-categoriaciudad.html">Ciudad</a></li>
+								<li><a href="consultas-categoriagenero.html">Género</a></li>
+								<li><a href="#">Estado civil</a></li>
+								<li><a href="consultas-categoriahobby.html">Hobby</a></li>
+								<li><a href="consultas-categoriafisica.html">Actividad física</a></li>
+							  </ul>
+						</li>
+						<li><a href="consultas-pareja.html">Cantidad de personas que han encontrado pareja</a></li>
+						<li><a href="consultas-casado.html">Cantidad de personas que se han casado</a></li>
+						<li><a href="consultas-topmatches.html">Top de matches</a></li>
+						<li><a href="consultas-topwinks.html">Top de usuarios con más winks</a></li>
+						<li><a href="consultas-edadpareja.html">Rango de edad que más busca pareja</a></li>
+					  </ul>
+					  
+					</div><!--/.nav-collapse -->
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-9">
+				<form role="form" class="form-inline">  
+				  <div class="container">
+				  <table class="table table-hover">
+					<thead>
+					  <tr>
+						<th>Estado civil</th>
+						<th>Cantidad de usuarios</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr class="success">
+						<td>Casado</td>
+						<td>19</td>
+					  </tr>
+					  <tr class="success">
+						<td>Divorciado</td>
+						<td>75</td>
+					  </tr>
+					  <tr class="success">
+						<td>Soltero</td>
+						<td>125</td>
+					  </tr>
+					</tbody>
+				  </table>
+				 </div>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>
